@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+<script>
+  alert("script1 in head tag is loaded");
+</script>   
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+      <a href="/page2.html">Other page</a>
+    </nav>
+    <main>
+      <h1>Home page</h1>
+    </main>
+  <!--create 3 variables to store firstName, middleName, lastName and Generate fullName by joining 3 variable and print full name in console.-->
+   <script>
+      var firstName = "Pallavi";
+      var middleName = "xx";
+      var lastName = "Kollipara";
+      var fullName= firstName+middleName+lastName;
+      console.log(fullName);
+</script>
+ <!--create variables to store student details like name, contactNo, FatherName, MotherName, Class,RollNo and print it in console-->
+ <script>
+    var studentName="Lucky";
+    var studentContactNo= 7818975464,fatherName ="KK",motherName="KL",rollNo=1234;
+    console.log(studentContactNo,fatherName,motherName,rollNo);
+</script>
+
+<!--create currentDate variable and store current Date into it and show that in alert popup-->
+  <script>
+     var localDate = new Date();
+     alert(localDate);
+  </script>
+  <script>alert("script2 in body is loaded");</script>
+
+  <!--Task4 Create 2 variable num1 assign value = 1122, num2 == 3344 show both varible in alert popup after alert now replace value of num1 with num2 & num2 with num1
+   now show updated value in alert again-->
+   <script>
+   var num1 = 1122;
+   var num2 = 3344;
+   alert(num1);
+   alert(num2);
+   num1=num2;
+   alert(num1);
+   num2=1122;
+   alert(num2);
+   </script>
+
+   <!--Task5 Create 4 variables to store: product name, price, quantity, and discount percentage
+Calculate the final price: (price × quantity) - (discount percentage of total)
+Create a formatted string: "Product: [name], Original Total: $[amount], Discount: $[discount], Final Price: $[final]"
+Print the formatted string in console and in an alert-->
+<script>
+var productName ="Lunch Box", price = 30,quantity = 2 ,discount =20;
+var formattedString = "Product:"+[productName]+"Original Total: "+[30*2]+"Discount: $"+[20*10/100]+"Final Price: $"+[30*2-20*10/100];
+alert(formattedString);
+</script>
+  </body>
+</html>
